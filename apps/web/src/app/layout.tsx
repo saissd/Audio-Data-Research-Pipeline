@@ -1,0 +1,1 @@
+import './globals.css';export default function R({children}:{children:React.ReactNode}){return <html><body className='p-6 max-w-5xl mx-auto'>{children}</body></html>}

@@ -1,0 +1,1 @@
+export default function P(){return <main><h1 className='text-2xl font-bold'>ADR v2</h1><p>Upload-ready demo repo.</p></main>}

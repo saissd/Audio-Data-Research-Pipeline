@@ -1,0 +1,13 @@
+
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql"; url = env("DATABASE_URL") }
+model Clip {
+  id          String   @id @default(cuid())
+  filename    String
+  s3Key       String
+  durationSec Float?
+  silencePct  Float?
+  snrDb       Float?
+  createdAt   DateTime @default(now())
+  status      String   @default("UPLOADED")
+}
